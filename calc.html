@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body class="grid text-center" id="body">
+    <header></header>
+    <main>
+        <table >
+            <tr>
+              <td colspan="4" ><button id="result">0</button></td>
+            </tr>
+            <tr>
+              <td ><button onclick="add('1')">1</button></td>
+              <td><button onclick="add('2')">2</button></td>
+              <td><button onclick="add('3')">3</button></td>
+              <td><button onclick="add('+')">+</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="add('4')">4</button></td>
+              <td><button onclick="add('5')">5</button></td>
+              <td><button onclick="add('6')">6</button></td>
+              <td><button onclick="add('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="add('7')">7</button></td>
+              <td><button onclick="add('8')">8</button></td>
+              <td><button onclick="add('9')">9</button></td>
+              <td><button onclick="add('*')">*</button></td>
+            </tr>
+            <tr>
+              <td colspan="3"><button onclick="add('0')">0</button></td>
+              <td colspan="3"><button onclick="add('/')">/</button></td>          
+            </tr>
+            <tr>
+              <td colspan="2"><button onclick="del()" class="ac">AC</button></td>
+              <td><button onclick="add('.')">.</button></td>
+              <td><button onclick="calc()">=</button></td>            
+            </tr>
+            <tr>
+                <td><button id="raiz" onclick="add('**(1/')" >Raiz</button></td>
+                <td><button onclick="add('(')">(</button></td>
+                <td><button onclick="add(')')">)</button></td>
+                <td><button id="num1" onclick="add('x')">x </button></td>
+            </tr>
+            <tr>
+                <td>Valor x:<input id="prueba" onchange="number1(this.value)" type="number"></td>
+                
+            </tr>
+          </table>
+          <center><h3 id="counter-label">0</h3></center>
+    </main>
+    <footer>
+      <p>0= Racional</p>
+      <p>1=Irracional</p>
+    </footer>
+    <script src="/calc.js"></script>
+</body>
+</html>
