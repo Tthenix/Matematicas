@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <header></header>
+    <main class="fondo">
+        <center><button class="btn" id="result">0</button></center>
+        <table class="center" >
+            <!-- Show the result of the operation  <tr> -->
+              <td ></td>
+            </tr>
+            <!-- Buttons for the calculator  <tr> -->
+            <tr>
+             
+              <td><button class="btn" onclick="add('1')">1</button></td>
+              <td><button class="btn" onclick="add('2')">2</button></td>
+              <td><button class="btn" onclick="add('3')">3</button></td>
+              <td><button class="btn" onclick="add('+')">+</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn" onclick="add('4 ')">4</button></td>
+              <td><button class="btn" onclick="add('5')">5</button></td>
+              <td><button class="btn" onclick="add('6')">6</button></td>
+              <td><button class="btn" onclick="add('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn" onclick="add('7')">7</button></td>
+              <td><button class="btn" onclick="add('8')">8</button></td>
+              <td><button class="btn" onclick="add('9')">9</button></td>
+              <td><button class="btn" onclick="add('*')">*</button></td>
+            </tr>
+            <tr>
+              <td colspan="3"><button class="btn" onclick="add('0')">0</button></td>
+              <td colspan="3"><button id="divi" class="btn" onclick="add('/')">/</button></td>          
+            </tr>
+            <tr>
+              <td colspan="2"><button class="btn" onclick="del()" class="ac">AC</button></td>
+              <td><button class="btn" onclick="add('.')">.</button></td>
+              <td><button id="igual" class="btn" onclick="calc()">=</button></td>            
+            </tr>
+            <tr>
+                <td><button class="btn" id="raiz" onclick="add('**(1/')" >Raiz</button></td>
+                <td><button class="btn" onclick="add('(')">(</button></td>
+                <td><button class="btn" onclick="add(')')">)</button></td>
+                <td><button class="btn" id="num1" onclick="add('x')">x </button></td>
+            </tr>
+          </table>
+          <!-- put a worth to X  <tr> -->
+          Valor x:<input class="btn" id="prueba" onchange="number1(this.value)" type="number">
+          <center>Resultado:<h3 id="Resultado">0</h3></center>
+          <center><h3 id="counter-label"></h3></center>
+            <!-- Meaning of 0 and 1  <tr> -->
+      <p>0= Racional</p>
+      <p>1=Irracional</p>
+      <p>2=</p>
+      lim.izq: <h3 id="lim.izq"></h3>
+      lim.der: <h3 id="lim.der"></h3>
+    <!-- Link to javascript  <tr> -->
+    <script src="/calc.js"></script>
+    </main>
+    <footer>
+  
+</body>
+</html>
+
+<!-- 
+PDF con el código comentado en inglés.
+Link al código (github o drive), además de compartirlo conmigo (añadirlo en comentarios de la entrega)
+Realizar un video de captura de pantalla del código funcionando analizando una función de cada uno de los prácticos anteriores. (Introducción a las funciones algebraicas, Funciones irracionales - ejercicios, Funciones racionales - ejercicios, Funciones racionales - problemas)
+Fecha de entrega: -->
